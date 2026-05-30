@@ -2,6 +2,10 @@
 
 A simple, modern, and beautiful todo list manager and Pomodoro productivity timer right in your GNOME Shell top bar. 
 
+<p align="center">
+  <img src="screenshot.png" alt="uTodo Screenshot" width="400">
+</p>
+
 ---
 
 ## ✨ Features
