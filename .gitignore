@@ -1,0 +1,4 @@
+# uTodo Extension Git Ignore
+.antigravitycli/
+*~
+.DS_Store

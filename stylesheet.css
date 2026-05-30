@@ -1,0 +1,428 @@
+/* uTodo Extension Stylesheet */
+
+/* Panel button styling */
+.utodo-panel-button {
+    padding: 0 8px;
+    border-radius: 4px;
+}
+.utodo-panel-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.utodo-panel-box {
+    spacing: 4px;
+}
+
+.utodo-panel-icon {
+    icon-size: 16px;
+    color: #eeeeee;
+}
+
+.utodo-panel-badge {
+    background-color: rgba(53, 132, 228, 0.18);
+    border: 1px solid rgba(53, 132, 228, 0.35);
+    color: #3584e4;
+    border-radius: 10px;
+    padding: 1px 6px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+/* Menu Container */
+.utodo-menu-container {
+    width: 420px;
+    padding: 8px 0;
+}
+
+/* Header */
+.utodo-header {
+    padding: 6px 16px;
+    spacing: 8px;
+}
+
+.utodo-title {
+    font-size: 1.25em;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.utodo-stats {
+    font-size: 0.8em;
+    color: #888888;
+    margin-left: auto;
+    font-weight: 500;
+}
+
+/* Text Input Entry */
+.utodo-entry-container {
+    padding: 0 4px;
+}
+
+.utodo-entry {
+    background-color: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 8px 8px 8px 12px;
+    color: #ffffff;
+    font-size: 0.95em;
+    caret-color: #ffffff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+    selection-background-color: rgba(255, 255, 255, 0.2) !important;
+    selected-color: #ffffff !important;
+}
+
+StEntry.utodo-entry:focus,
+.utodo-entry:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: none !important;
+}
+
+
+/* Settings / Toggle Button styling */
+.utodo-settings-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px 12px 8px 0;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.utodo-settings-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.utodo-settings-btn:checked {
+    background-color: rgba(53, 132, 228, 0.18) !important;
+    border-color: #3584e4 !important;
+}
+
+.utodo-settings-icon {
+    icon-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.15s ease;
+}
+
+.utodo-settings-btn:checked .utodo-settings-icon {
+    color: #3584e4;
+}
+
+/* Tasks list scroll area */
+.utodo-scroll-view {
+    max-height: 380px;
+    border-radius: 4px;
+    margin: 4px 0;
+}
+
+.utodo-task-list {
+    spacing: 2px;
+}
+
+.utodo-empty-label {
+    color: #666666;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 24px 0;
+    font-style: italic;
+}
+
+/* Individual Task Item */
+.utodo-task-item {
+    padding: 8px 16px;
+    spacing: 12px;
+    border-radius: 6px;
+}
+
+.utodo-task-item:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Checkbox button and icons */
+.utodo-checkbox-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.utodo-checkbox-icon {
+    icon-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.utodo-checkbox-icon-checked {
+    icon-size: 18px;
+    color: #3584e4;
+}
+
+/* Task details label */
+.utodo-task-label {
+    color: #eeeeee;
+    font-size: 0.95em;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.utodo-task-label-completed {
+    color: #666666;
+    text-decoration: line-through;
+}
+
+/* Action & Hover Buttons (Reorder, Edit, Delete) */
+.utodo-reorder-btn,
+.utodo-edit-btn,
+.utodo-delete-btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+    margin-left: 4px;
+    opacity: 0;
+}
+
+.utodo-reorder-btn {
+    margin-left: 8px; /* Extra left margin to separate from the label */
+}
+
+.utodo-task-item:hover .utodo-reorder-btn,
+.utodo-task-item:hover .utodo-edit-btn,
+.utodo-task-item:hover .utodo-delete-btn {
+    opacity: 0.4;
+}
+
+.utodo-task-item:hover .utodo-reorder-btn:hover,
+.utodo-task-item:hover .utodo-edit-btn:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    opacity: 1.0;
+}
+
+.utodo-task-item:hover .utodo-delete-btn:hover {
+    background-color: rgba(239, 71, 111, 0.15);
+    opacity: 1.0;
+}
+
+.utodo-reorder-icon {
+    icon-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.utodo-edit-icon {
+    icon-size: 14px;
+    color: #3584e4;
+}
+
+.utodo-delete-icon {
+    icon-size: 14px;
+    color: #ef476f;
+}
+
+/* In-place Edit Entry Box */
+.utodo-edit-entry {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.95em;
+    caret-color: #ffffff;
+    selection-background-color: rgba(255, 255, 255, 0.2) !important;
+    selected-color: #ffffff !important;
+}
+
+StEntry.utodo-edit-entry:focus,
+.utodo-edit-entry:focus {
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    box-shadow: none !important;
+}
+
+
+/* Completed Section Divider */
+.utodo-completed-header {
+    margin: 8px 16px 4px 16px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    spacing: 8px;
+}
+
+.utodo-completed-title {
+    color: #666666;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Utility buttons */
+.utodo-footer {
+    padding: 4px 12px 0 12px;
+    spacing: 8px;
+}
+
+.utodo-clear-btn {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.85em;
+    color: #eeeeee;
+    text-align: center;
+    font-weight: 500;
+}
+
+.utodo-clear-btn:hover {
+    background-color: rgba(239, 71, 111, 0.1);
+    border-color: rgba(239, 71, 111, 0.3);
+    color: #ef476f;
+}
+
+/* Pomodoro Container */
+.utodo-pomo-container {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 16px;
+    margin: 8px 12px;
+    spacing: 12px;
+}
+
+/* Large MM:SS time display */
+.utodo-pomo-time {
+    font-size: 2.8em;
+    font-weight: 800;
+    color: #ffffff;
+    font-family: monospace, system-ui, sans-serif;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+/* Presets & Controls Box */
+.utodo-pomo-presets,
+.utodo-pomo-controls {
+    spacing: 8px;
+}
+
+/* Preset Buttons */
+.utodo-pomo-preset-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.utodo-pomo-preset-btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.utodo-pomo-preset-btn:active {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Control Buttons */
+.utodo-pomo-control-btn {
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.15s ease;
+}
+
+.utodo-pomo-start {
+    background-color: #3584e4;
+    border: 1px solid #1c71d8;
+    color: #ffffff;
+}
+
+.utodo-pomo-start:hover {
+    background-color: #4a90e2;
+    border-color: #3584e4;
+}
+
+.utodo-pomo-start:active {
+    background-color: #1c71d8;
+}
+
+.utodo-pomo-reset {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.utodo-pomo-reset:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+}
+
+.utodo-pomo-reset:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================================================= */
+/* Keyboard Focus & Accessibility States                                     */
+/* ========================================================================= */
+
+/* Settings Toggle Button Focus */
+.utodo-settings-btn:focus {
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    border-color: #3584e4 !important;
+    box-shadow: 0 0 0 2px rgba(53, 132, 228, 0.4) !important;
+}
+
+/* Pomodoro Preset Buttons Focus */
+.utodo-pomo-preset-btn:focus {
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    border-color: #3584e4 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 2px rgba(53, 132, 228, 0.4) !important;
+}
+
+/* Pomodoro Control Buttons Focus */
+.utodo-pomo-start:focus {
+    background-color: #4a90e2 !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4) !important;
+}
+
+.utodo-pomo-reset:focus {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: #3584e4 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 2px rgba(53, 132, 228, 0.4) !important;
+}
+
+/* Task Item Utility Action Buttons Focus (Reorder, Edit, Delete) */
+.utodo-reorder-btn:focus,
+.utodo-edit-btn:focus {
+    opacity: 1.0 !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 0 0 2px rgba(53, 132, 228, 0.5) !important;
+}
+
+.utodo-delete-btn:focus {
+    opacity: 1.0 !important;
+    background-color: rgba(239, 71, 111, 0.15) !important;
+    box-shadow: 0 0 0 2px rgba(239, 71, 111, 0.5) !important;
+}
+
+/* Footer Clear Completed Button Focus */
+.utodo-clear-btn:focus {
+    background-color: rgba(239, 71, 111, 0.08) !important;
+    border-color: rgba(239, 71, 111, 0.3) !important;
+    color: #ef476f !important;
+    box-shadow: 0 0 0 2px rgba(239, 71, 111, 0.4) !important;
+}

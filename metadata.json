@@ -1,0 +1,10 @@
+{
+  "uuid": "utodo@abhay.projects",
+  "name": "uTodo",
+  "description": "A simple and beautiful todo list manager right in your top bar.",
+  "shell-version": [
+    "45",
+    "46"
+  ],
+  "url": "https://github.com/abhay/utodo"
+}
